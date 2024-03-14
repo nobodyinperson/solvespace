@@ -49,9 +49,9 @@ const MenuEntry Menu[] = {
 { 1, N_("Export 2d &View..."),          Command::EXPORT_VIEW,      0,       KN, mFile  },
 { 1, N_("Export 2d &Section..."),       Command::EXPORT_SECTION,   0,       KN, mFile  },
 { 1, N_("Export 3d &Wireframe..."),     Command::EXPORT_WIREFRAME, 0,       KN, mFile  },
-{ 1, N_("Export Triangle &Mesh..."),    Command::EXPORT_MESH,      0,       KN, mFile  },
-{ 1, N_("Export &Surfaces..."),         Command::EXPORT_SURFACES,  0,       KN, mFile  },
-{ 1, N_("Im&port..."),                  Command::IMPORT,           0,       KN, mFile  },
+{ 1, N_("Export Triangle &Mesh..."),    Command::EXPORT_MESH,      C|S|'x', KN, mFile  },
+{ 1, N_("Export &Surfaces..."),         Command::EXPORT_SURFACES,  C|S|'e', KN, mFile  },
+{ 1, N_("Im&port..."),                  Command::IMPORT,           C|'i',   KN, mFile  },
 #ifndef __APPLE__
 { 1,  NULL,                             Command::NONE,             0,       KN, NULL   },
 { 1, N_("E&xit"),                       Command::EXIT,             C|'q',   KN, mFile  },
